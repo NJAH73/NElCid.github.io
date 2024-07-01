@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="title">My Tech Goals</title>
+    <style>
+        
+.title{
+    width:100%;
+}
+a {
+    color: blue; 
+    text-decoration: none;
+    border: 3px solid;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+.slackProfilePicture {
+    justify-content: center;
+    width:100%;
+}
+body {
+    font-size: 120px;
+    padding: 5
+    width:100%;
+}
+.goldtext{
+    color:gold;
+}
+.whitetext{
+    color: white;
+}
+.visiontext{
+    font-size: 120px;
+    width:100%;
+    color: white;
+}
+
+    </style>
+</head>
+<body style="background-color: rgb(35, 35, 53);">
+    <h1 class="whitetext">My Goals in Tech for the Next 2 Years 🚀🚀</h1>
+        <p data-testid="currentDay" class="whitetext"><b>Today's Day: <span id="day"></span></b> </p>
+        <p data-testid="currentTimeUTC" class="whitetext"><b>Time(in UTC): <span id="time"></span></b></p>
+        <br>   
+        <br data-testid="slackProfilePicture" class="whitetext"><img src="My-profile-picture.jpg" alt="Profile Picture" style="width:100%;"></br>
+        <br>
+        <p data-testid="slackDisplayName" class="whitetext"><b>My name is N.ElCid</b></p>
+    <br>
+    <p><b class="visiontext">My Vision for the next 2 years:</b></p>
+    <br>
+    <p class="whitetext"><b class="goldtext">1. Mastering Modern JavaScript Frameworks:</b>I’m focused on JavaScript frameworks. With them, I’ll be able to create dynamic web experiences that leave users satisfied.</p>
+    <br>
+    <p class="whitetext"><b class="goldtext">2. Crafting Responsive and Accessible Web Designs:</b>Because this will help keep users attracted and hooked unto my web page. To be able to deliver super amazing web designs is a dream.</p>
+    <br>
+    <p class="whitetext"><b class="goldtext">3. Contributing to many Open Source Projects:</b>This is because I’m a community person. I will love to work with likeminded great people in future to accomplish great tasks. I hope to connect with as many people as possible</p>
+    <br>
+    <p class="whitetext"><b class="goldtext">4. Tackling Advanced CSS:</b>Going beyond the basics is sure the best way to get better, explore new design functions and develop the best and most satisfactory designs for a web page.</p>
+    <br>
+    <p class="whitetext"><b class="goldtext">5. Becoming a Full-Stack Developer:</b>Taking things a step further into mastery of what lies ahead of front end development is certainly a goal I really yearn to accomplish.</p>
+    <br>
+    <p class="whitetext"><b class="goldtext">6. Earning Technical Certifications:</b>Obtaining as many certifications as possible in order to boost my portfolio is definitely a goal of mine which extends to even above 2 years.</p>
+    <br>
+    <p class="whitetext"><b class="goldtext">7. Leading Impactful Projects:</b>Becoming a project leader of any small or big project; front end related in the span of 2 years. . . yes I really look forward to it and I will accomplish it. </p>
+    <br>
+
+    <p class="whitetext"> My plan is to get everything done in the next two years even as I can't tell how long each step will take for me to accomplish but my determination still stands. I really hope to encounter powerful minds and connections to give this path a better taste of fulfilment. I shall relentlessly move forward till I get every single thing done.</p>
+    <br>
+    <p data-testid="slackEmail" class="whitetext"><b class="goldtext">Contact info: Email me at:</b> njahelton@gmail.com</p>
+
+    <p class="whitetext">Important Links to check out:</p>
+    <br>
+        <p><a href="https://hng.tech/learn" data-testid="hngLink">Learn at HNG</a></p>
+        <p><a href="https://keyword.dog" data-testid="keywordLink">Keyword Dog</a></p>
+        <p><a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink">Scrape Any Web</a></p>
+
+    <!-- JavaScript to display current time and day -->
+    <script>
+        const timeElement = document.getElementById('time');
+        const dayElement = document.getElementById('day');
+
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toISOString().substr(11, 8); // HH:MM:SS
+            const dayString = now.toLocaleDateString('en-US', { weekday: 'long' });
+
+            timeElement.textContent = timeString;
+            dayElement.textContent = dayString;
+        }
+
+        updateTime(); // Initial call
+        setInterval(updateTime, 1000); // Update every second
+    </script>
+</body>
+</html>
+
